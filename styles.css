@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFD854;    
+    font-family: 'Courier Prime', monospace;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+
+
+/*------------------------------- line back section -------------------------------*/
+
+.line-back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100vw; */
+}
+
+.line {
+    border-bottom: 2px solid black;
+    transform: rotate(90deg);
+    width: 200vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.ln1 {
+    right: 450px;
+    opacity: 20%;
+}
+
+.ln2 {
+    right: 0px;
+    opacity: 0%;
+}
+
+.ln3 {
+    left: 450px;
+    opacity: 30%;
+}
+
+
+/*------------------------------- line back section -------------------------------*/
+
+
+/* coming soon */
+
+#coming-soon div{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #101010;
+    color: #eba800a1;
+    gap: 5rem;
+    overflow: hidden;
+}
+    
+    
+#coming-soon div h1 {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    animation: logoloop 10s linear infinite;
+}
+
+@keyframes logoloop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* coming soon */
+
+
+/*------------------------------- hero section -------------------------------*/
+
+#hero-section {
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10vh; */
+    margin: 10vh 0;
+}
+
+.pd-cont {
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -100%;
+    animation: cm-right 1s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes cm-right {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    animation: cm-logo 1.5s forwards;
+    animation-delay: 1s;
+    position: relative;
+    right: -100px;
+}
+
+@keyframes cm-logo {
+    from {
+        right: -100px;
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+        right: 0px;
+    }
+}
+
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -100%;
+    animation: cm-left 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes cm-left {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+.col-1 p {
+    font-size: 23.125rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h1-pt1 {
+    position: absolute;
+    top: 0px;
+}
+
+.h1-pt2 {
+    position: relative;
+    bottom: 110px;
+}
+
+.col-2 {
+    /* transform: rotateY(0deg); */
+}
+
+.col-2:hover .b-logo {
+    transform: rotateY(180deg);
+    transition: 0.3s all ease-in-out;
+}
+
+
+.b-logo {
+    display: flex;
+    transform-style: preserve-3d;
+    transition: 0.3s all ease-in-out;
+}
+
+.col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-back {
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+
+
+/*------------------------------- hero section -------------------------------*/
+
+
+::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin: 0.8em;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #010101;
+    border-radius: 1rem;
+}
