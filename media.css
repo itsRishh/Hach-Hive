@@ -1,0 +1,43 @@
+@media screen and (max-width: 476px) {
+
+    .pd-cont {
+        margin: 0 1rem;
+    }
+
+    /*---------------------------------- navbar ----------------------------------*/
+
+    nav {
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        padding: 1rem 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.5rem;
+        height: 0;
+        opacity: 0;
+    }
+    
+    .nav-list-visible {
+        height: 150px;
+        opacity: 1;
+        margin: 1.5rem 0 0.8rem;
+        transition: 0.3s all ease-in-out;
+    }
+
+    /*---------------------------------- navbar ----------------------------------*/
+
+
+    #hero-section {
+        display: none;
+    }
+    
+    .main-head-phone {
+        margin: 2rem 0;
+        display: flex;
+        width: 100vw;
+    }
+}
